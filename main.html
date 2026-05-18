@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EngNet Consultoria | Inovação e Tecnologia</title>
+  <!-- Tailwind CSS + Font Awesome + Google Fonts Montserrat -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'laranja': '#FF8D28',
+            'roxo': '#8A38F5',
+          },
+          fontFamily: {
+            'montserrat': ['Montserrat', 'sans-serif'],
+          },
+          fontSize: {
+            'h1': '48px',
+            'h2': '32px', 
+            'h3': '26px',
+            'body': '18px',
+            'button': '16px',
+          },
+          fontWeight: {
+            'extrabold': 800,
+            'bold': 700,
+            'semibold': 600,
+            'regular': 400,
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-black text-white font-montserrat">
+
+  <header class="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-laranja/30 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+      
+      <!-- Inicio e LOGO -->
+      <div class="flex items-center gap-3">
+        <img src="Assinatura Simbolo Laranja 2 (1).png" alt="Logo EngNet" class="w-12 h-12 rounded-lg object-contain">
+        <span class="font-extrabold text-2xl tracking-tight text-white">EngNet<span class="text-laranja">Consultoria</span></span>
+      </div>
+
+      <nav class="hidden md:flex space-x-8 font-semibold">
+        <a href="#home" class="hover:text-laranja transition-colors">Início</a>
+        <a href="#servicos" class="hover:text-laranja transition-colors">Serviços</a>
+        <a href="#sobre" class="hover:text-laranja transition-colors">Sobre</a>
+        <a href="#diferenciais" class="hover:text-laranja transition-colors">Inovação</a>
+        <a href="#contato" class="hover:text-laranja transition-colors">Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#contato" class="hidden md:inline-block bg-laranja hover:bg-[#FF8D28] text-black font-bold px-5 py-2 rounded-full text-button shadow-md transition-all hover:scale-105">Converse conosco</a>
+        <button id="mobileMenuBtn" class="md:hidden text-white text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden hidden bg-black/95 border-t border-laranja/30 py-4 px-6 flex flex-col space-y-3">
+      <a href="#home" class="hover:text-laranja transition-colors py-2 font-semibold">Início</a>
+      <a href="#servicos" class="hover:text-laranja transition-colors py-2 font-semibold">Serviços</a>
+      <a href="#sobre" class="hover:text-laranja transition-colors py-2 font-semibold">Sobre</a>
+      <a href="#diferenciais" class="hover:text-laranja transition-colors py-2 font-semibold">Inovação</a>
+      <a href="#contato" class="hover:text-laranja transition-colors py-2 font-semibold">Contato</a>
+      <a href="#contato" class="bg-laranja text-black font-bold text-center px-4 py-2 rounded-full mt-2 text-button">Consultoria gratuita</a>
+    </div>
+  </header>
+
+  <main class="pt-28">
+
+    <!-- ========= SECTION 1 ====== -->
+    <section id="home" class="py-16 md:py-24">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="flex-1 text-center lg:text-left">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-laranja/10 text-laranja text-xs font-semibold mb-4 border border-laranja/30">Empresa Júnior UnB</span>
+            <h1 class="text-h1 font-extrabold leading-tight">
+              Somos uma <span class="text-laranja">Empresa Júnior</span><br>de Tecnologia
+            </h1>
+            <p class="text-gray-300 text-body mt-6 max-w-2xl mx-auto lg:mx-0">
+              Soluções de Engenharia prontas para superar novos desafios. Criamos soluções personalizadas com foco no desenvolvimento conjunto com o cliente.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center lg:justify-start mt-8">
+              <a href="#contato" class="bg-laranja hover:bg-[#FF8D28] text-black font-bold px-8 py-3 rounded-full shadow-lg transition-all hover:scale-105 flex items-center gap-2 group text-button">
+                Conte conosco <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+              </a>
+              <button class="border-2 border-laranja text-laranja hover:bg-laranja hover:text-black font-bold px-8 py-3 rounded-full transition-all hover:scale-105 text-button">
+                Ver portfólio
+              </button>
+            </div>
+            <div class="mt-10 flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-gray-400">
+              <div class="flex items-center gap-2"><i class="fas fa-check-circle text-laranja"></i> Criação</div>
+              <div class="flex items-center gap-2"><i class="fas fa-chart-line text-laranja"></i> Otimização</div>
+              <div class="flex items-center gap-2"><i class="fas fa-headset text-laranja"></i> Consultoria</div>
+            </div>
+          </div>
+          
+          
+          <div class="flex-1 flex justify-center">
+            <img src="12-980x980 2.png" alt="Ilustração tecnologia" class="w-80 h-80 rounded-3xl shadow-2xl object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVIÇOS (FUNDO BRANCO) ========= -->
+    <section id="servicos" class="py-20 bg-white">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <div class="text-center mb-14">
+          <i class="fas fa-cogs text-laranja text-3xl mb-3"></i>
+          <h2 class="text-h2 font-bold text-gray-900">Nossos <span class="text-laranja">Serviços</span></h2>
+          <div class="w-20 h-1 bg-laranja mx-auto mt-3 rounded-full"></div>
+          <p class="text-gray-600 text-body max-w-2xl mx-auto mt-5">Soluções completas em tecnologia para alavancar seu negócio.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 transition-all duration-300 hover:border-laranja hover:shadow-xl hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-laranja/10 flex items-center justify-center mb-5"><i class="fas fa-globe text-2xl text-laranja"></i></div>
+            <h3 class="text-h3 font-bold text-gray-800">Sistemas Web</h3>
+            <p class="text-gray-600 text-body mt-2">Se adeque à todos os tipos de dispositivos por um sistema web que automatiza e organiza processos conforme sua personalização.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 transition-all duration-300 hover:border-laranja hover:shadow-xl hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-laranja/10 flex items-center justify-center mb-5"><i class="fas fa-pencil-ruler text-2xl text-laranja"></i></div>
+            <h3 class="text-h3 font-bold text-gray-800">Concepções Digitais</h3>
+            <p class="text-gray-600 text-body mt-2">Verifique a viabilidade tecnológica do seu projeto e amadureça a sua ideia por meio da coleta de requisitos e prototipação.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 transition-all duration-300 hover:border-laranja hover:shadow-xl hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-laranja/10 flex items-center justify-center mb-5"><i class="fas fa-code text-2xl text-laranja"></i></div>
+            <h3 class="text-h3 font-bold text-gray-800">Sites</h3>
+            <p class="text-gray-600 text-body mt-2">Se torne visível na internet, divulgue a imagem da sua instituição para o público e potencialize sua prospecção passiva e conversões online.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 transition-all duration-300 hover:border-laranja hover:shadow-xl hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-laranja/10 flex items-center justify-center mb-5"><i class="fas fa-microchip text-2xl text-laranja"></i></div>
+            <h3 class="text-h3 font-bold text-gray-800">Soluções Personalizadas</h3>
+            <p class="text-gray-600 text-body mt-2">Soluções que se adequam a sua necessidade, abrangemos a integração do hardware ao software para a implementação do projeto.</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 transition-all duration-300 hover:border-laranja hover:shadow-xl hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-laranja/10 flex items-center justify-center mb-5"><i class="fas fa-mobile-alt text-2xl text-laranja"></i></div>
+            <h3 class="text-h3 font-bold text-gray-800">Aplicativos</h3>
+            <p class="text-gray-600 text-body mt-2">O desenvolvimento de aplicativos é destinado a novos empreendedores ou empresas que buscam oferecer experiências personalizadas para seus usuários, facilitando e automatizando processos para o uso intuitivo do cliente.</p>
+          </div>
+          <!-- Card 6 -->
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= SOBRE NÓS (FUNDO LARANJA ) ====== -->
+    <section id="sobre" class="py-20 bg-laranja">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="flex-1">
+            <h2 class="text-h2 font-bold text-white">Empresa Júnior de <span class="text-black">Tecnologia</span></h2>
+            <div class="w-16 h-1 bg-white my-4 rounded-full"></div>
+            <p class="text-white text-body leading-relaxed">
+             A EngNet Consultoria é uma empresa júnior de tecnologia da UnB que oferece soluções completas na área de TI enquanto fornece vivência empresarial aos alunos de divesas engenharias. Nós transformamos, despertamos propósitos e concretizamos sonhos.
+            <div class="grid grid-cols-3 gap-4 mt-8 text-center">
+              <div class="bg-black/20 p-4 rounded-xl backdrop-blur-sm"><i class="fas fa-calendar-alt text-white text-2xl"></i><p class="font-bold mt-1 text-white">+8 anos</p><p class="text-white/80 text-body">de experiência</p></div>
+              <div class="bg-black/20 p-4 rounded-xl backdrop-blur-sm"><i class="fas fa-project-diagram text-white text-2xl"></i><p class="font-bold mt-1 text-white">+120 projetos</p><p class="text-white/80 text-body">entregues</p></div>
+              <div class="bg-black/20 p-4 rounded-xl backdrop-blur-sm"><i class="fas fa-users text-white text-2xl"></i><p class="font-bold mt-1 text-white">50+ engenheiros</p><p class="text-white/80 text-body">capacitados</p></div>
+            </div>
+          </div>
+          
+          <!-- ESPAÇO 3: IMAGEM DA EQUIPE -->
+          <div class="flex-1 flex justify-center">
+            <img src="EngNet-2 2.png" alt="Nossa equipe" class="w-80 h-80 rounded-2xl object-cover shadow-xl">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIFERENCIAIS  ========== -->
+    <section id="diferenciais" class="py-20 bg-black border-y border-laranja/20">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <div class="text-center mb-12">
+          <i class="fas fa-brain text-laranja text-3xl mb-3"></i>
+          <h2 class="text-h2 font-bold text-white">Pense diferente, <span class="text-laranja">inove.</span></h2>
+        </div>
+        <!-- Cards centralizados com largura máxima e margens automáticas -->
+        <div class="flex justify-center">
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl w-full">
+            <div class="bg-gray-900/30 p-8 rounded-xl border-l-4 border-laranja transition-all hover:bg-gray-900/50">
+              <i class="fas fa-wifi text-3xl text-laranja mb-3"></i>
+              <h3 class="text-h3 font-bold text-white">Tecnologias 5G</h3>
+              <p class="text-gray-300 text-body mt-2">O 5G permitirá conexões de internet móvel muito mais rápidas e confiáveis, com velocidades até 100 vezes maiores que o 4G. Isso significa que poderemos ter acesso a novos recursos, como carros autônomos…</p>
+            </div>
+            <div class="bg-gray-900/30 p-8 rounded-xl border-l-4 border-laranja transition-all hover:bg-gray-900/50">
+              <i class="fas fa-industry text-3xl text-laranja mb-3"></i>
+              <h3 class="text-h3 font-bold text-white">Indústria 4.0</h3>
+              <p class="text-gray-300 text-body mt-2">A Indústria 4.0 é uma nova forma de produzir coisas usando tecnologias modernas, como inteligência artificial, internet das coisas e robótica. Isso torna as fábricas mais inteligentes e eficientes, e os produtos finais são melhores e mais personalizados para atender às necessidades dos clientes...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 bg-gradient-to-r from-laranja/10 to-roxo/10 rounded-3xl p-8 md:p-12 text-center border border-laranja/30">
+          <i class="fas fa-robot text-5xl text-laranja mb-4"></i>
+          <h3 class="text-h3 font-bold text-white">Automação: revolucione os processos da sua empresa</h3>
+          <p class="text-gray-300 text-body max-w-3xl mx-auto mt-3">Elimine tarefas repetitivas, agilize fluxos de trabalho e reduza erros através de uma plataforma ou aplicativo. Com a automação, sua empresa ganha produtividade, qualidade e competitividade no mercado.</p>
+          <a href="#contato" class="inline-block mt-6 bg-laranja hover:bg-[#FF8D28] text-black font-bold px-6 py-2 rounded-full transition-all hover:scale-105 text-button">saiba mais sobre nossos serviços →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARCEIROS (FUNDO LARANJA) ==-->
+    <section class="py-16 bg-laranja">
+      <div class="container mx-auto px-6 max-w-7xl text-center">
+        <h3 class="text-black uppercase tracking-wide text-sm font-bold">Quem nos apoia</h3>
+        <div class="flex flex-wrap justify-center gap-8 mt-8">
+          
+          <!-- ESPAÇOS PARA LOGOS DOS PARCEIROS -->
+          <div class="w-28 h-20 bg-white rounded-xl flex items-center justify-center p-2 shadow-md">
+            <img src="emdia-400x203 1.png" alt="Parceiro 1" class="w-full h-full object-contain">
+          </div>
+          <div class="w-28 h-20 bg-white rounded-xl flex items-center justify-center p-2 shadow-md">
+            <img src="Concentro-com-nome-4x3-1-400x250 1.png" alt="Parceiro 2" class="w-full h-full object-contain">
+          </div>
+          <div class="w-28 h-20 bg-white rounded-xl flex items-center justify-center p-2 shadow-md">
+            <img src="Frame-1-1-400x250 1.png" alt="Parceiro 3" class="w-full h-full object-contain">
+          </div>
+          
+          
+        </div>
+        
+    </section>
+
+    <!-- ==================== CONTATO (FUNDO BRANCO) ==================== -->
+    <section id="contato" class="py-20 bg-white">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="bg-gray-50 rounded-3xl border border-gray-200 p-8 md:p-12 shadow-lg">
+          <div class="text-center mb-8">
+            <i class="fas fa-comments text-laranja text-4xl"></i>
+            <h2 class="text-h2 font-bold text-gray-900 mt-2">Conte conosco!</h2>
+            <p class="text-gray-600 text-body">Estamos prontos para te ajudar. Converse gratuitamente com um de nossos consultores.</p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <div class="flex items-center gap-3"><i class="fas fa-envelope text-laranja text-xl"></i><a href="mailto:contato@engnetconsultoria.com.br" class="text-gray-700 hover:text-laranja transition text-body">contato@engnetconsultoria.com.br</a></div>
+              <div class="flex items-center gap-3"><i class="fab fa-whatsapp text-laranja text-xl"></i><a href="https://wa.me/556192137397" target="_blank" class="text-gray-700 hover:text-laranja transition text-body">(61) 9213-7397</a></div>
+              <div class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-laranja text-xl"></i><a href="https://maps.google.com/?q=Campus+Darcy+Ribeiro+UnB+Brasília" target="_blank" class="text-gray-700 hover:text-laranja transition text-body">Campus Darcy Ribeiro, UnB - Brasília/DF</a></div>
+            </div>
+            <form id="contactForm" class="space-y-4">
+              <input type="text" placeholder="Seu nome" class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:border-laranja focus:ring-2 focus:ring-laranja/20 outline-none transition text-gray-900 placeholder-gray-400 text-body">
+              <input type="email" placeholder="Seu e-mail" class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:border-laranja focus:ring-2 focus:ring-laranja/20 outline-none transition text-gray-900 placeholder-gray-400 text-body">
+              <textarea rows="3" placeholder="Sua mensagem..." class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:border-laranja focus:ring-2 focus:ring-laranja/20 outline-none transition text-gray-900 placeholder-gray-400 text-body"></textarea>
+              <button type="submit" class="w-full bg-laranja hover:bg-[#FF8D28] text-black font-bold px-6 py-3 rounded-full transition-all hover:scale-105 text-button">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black border-t border-laranja/30 py-12">
+    <div class="container mx-auto px-6 max-w-7xl text-center text-gray-400 text-body">
+      <p>© 2026 EngNet Consultoria - Soluções em Engenharia e Tecnologia</p>
+      <div class="flex justify-center gap-6 mt-4">
+        <a href="#" class="hover:text-laranja transition"><i class="fab fa-instagram text-xl"></i></a>
+        <a href="#" class="hover:text-laranja transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+        <a href="#" class="hover:text-laranja transition"><i class="fab fa-github text-xl"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>
